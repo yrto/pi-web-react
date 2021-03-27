@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
+
+.App blockquote {
+  display: flex;
+  flex-direction: column;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  max-width: 400px;
+}
+
+.App blockquote span {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}

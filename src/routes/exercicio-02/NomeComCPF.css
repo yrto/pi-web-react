@@ -1,0 +1,24 @@
+.nome-com-cpf {
+  display: flex;
+  flex-direction: column;
+  max-width: 240px;
+}
+
+.nome-com-cpf .campo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.nome-com-cpf .campo input {
+  margin-left: 1rem;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-weight: 700;
+}
