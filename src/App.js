@@ -1,7 +1,8 @@
 import "./App.css";
 // import NomeComCPF from "./routes/exercicio-02";
 // import CitacaoContainer from "./routes/exercicio-01/CitacaoContainer";
-import SorteieUmNumero from "./routes/exercicio-03";
+// import SorteieUmNumero from "./routes/exercicio-03";
+import QuenteFrio from "./routes/exercicio-04";
 
 /*
  * Componentes:
@@ -17,7 +18,7 @@ import SorteieUmNumero from "./routes/exercicio-03";
 function App() {
   return (
     <div className="App">
-      <SorteieUmNumero />
+      <QuenteFrio />
     </div>
   );
 }

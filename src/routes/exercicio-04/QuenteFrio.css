@@ -1,0 +1,37 @@
+#cards-container {
+  display: flex;
+  padding: 1rem;
+}
+
+#cards-container .card {
+  width: 220px;
+  margin: 1rem;
+  background-color: #444;
+}
+
+#cards-container .card .card-temp {
+  padding: 2rem 1rem;
+}
+
+#cards-container .card button.destacar {
+  margin-top: 1rem;
+}
+
+#cards-container .card .card-icon {
+  margin: 2rem 0;
+}
+
+#cards-container .card .minima-maxima {
+  display: flex;
+}
+
+#cards-container .card .minima-maxima div {
+  flex-grow: 1;
+}
+#cards-container .card .minima-maxima .icon {
+  margin-right: 0.5rem;
+}
+
+#cards-container .destaque {
+  background-color: teal;
+}
