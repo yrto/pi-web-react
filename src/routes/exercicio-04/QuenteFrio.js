@@ -11,55 +11,69 @@ import "./QuenteFrio.css";
 
 const QuenteFrio = () => {
   //
-  const [destaque, setDestaque] = useState();
+  const [tempInfo, setTempInfo] = useState({
+    destaque: null,
+    cardsInfo: [
+      {
+        id: "quente",
+        data: "26/03",
+        icon: <FontAwesomeIcon icon={faSun} size="6x" />,
+        max: "34°C",
+        min: "29°C",
+      },
+      {
+        id: "frio",
+        data: "27/03",
+        icon: <FontAwesomeIcon icon={faSnowflake} size="6x" />,
+        max: "12°C",
+        min: "2°C",
+      },
+    ],
+  });
 
-  const handleClick = () => {};
+  const handleStyles = (id) =>
+    tempInfo.destaque === id ? "card destaque" : "card sem-destaque";
+
+  const handleClick = (id) => {
+    setTempInfo({
+      ...tempInfo,
+      destaque: id,
+    });
+  };
 
   return (
-    <div id="cards-container">
-      <div className="card">
-        <div className="quente">
-          <h2>Temp</h2>
-          <div className="card-icon">
-            <FontAwesomeIcon icon={faSun} size="6x" />
-          </div>
-          <div className="minima-maxima">
-            <div>
-              <FontAwesomeIcon icon={faArrowUp} className="icon" />
-              34°C
-            </div>
-            <div>
-              <FontAwesomeIcon icon={faArrowDown} className="icon" />
-              29°C
-            </div>
-          </div>
-        </div>
-        <button className="destacar" onClick={handleClick}>
-          Destacar
-        </button>
-      </div>
-      <div className="card">
-        <div className="quente">
-          <h2>Temp</h2>
-          <div className="card-icon">
-            <FontAwesomeIcon icon={faSnowflake} size="6x" />
-          </div>
-          <div className="minima-maxima">
-            <div>
-              <FontAwesomeIcon icon={faArrowUp} className="icon" />
-              12°C
-            </div>
-            <div>
-              <FontAwesomeIcon icon={faArrowDown} className="icon" />
-              2°C
+    <ul className="temp-cards">
+      {tempInfo.cardsInfo.map((element) => (
+        <li key={element.id}>
+          <div
+            className={handleStyles(element.id)}
+            onClick={() => {
+              handleClick(element.id);
+            }}
+          >
+            <h2>{element.data}</h2>
+            <div className="main-icon">{element.icon}</div>
+            <div className="minima-maxima">
+              <div>
+                <FontAwesomeIcon icon={faArrowUp} className="icon" />
+                {element.max}
+              </div>
+              <div>
+                <FontAwesomeIcon icon={faArrowDown} className="icon" />
+                {element.min}
+              </div>
             </div>
           </div>
-        </div>
-        <button className="destacar" onClick={handleClick}>
-          Destacar
-        </button>
-      </div>
-    </div>
+          <button
+            onClick={() => {
+              handleClick(element.id);
+            }}
+          >
+            Destacar
+          </button>
+        </li>
+      ))}
+    </ul>
   );
 };
 
