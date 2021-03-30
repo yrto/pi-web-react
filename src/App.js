@@ -2,7 +2,9 @@ import "./App.css";
 // import NomeComCPF from "./routes/exercicio-02";
 // import CitacaoContainer from "./routes/exercicio-01/CitacaoContainer";
 // import SorteieUmNumero from "./routes/exercicio-03";
-import QuenteFrio from "./routes/exercicio-04";
+// import QuenteFrio from "./routes/exercicio-04";
+// import CardTempoContainer from "./routes/exercicio-04-alt";
+import MiniChat from "./routes/exercicio-05";
 
 /*
  * Componentes:
@@ -18,7 +20,7 @@ import QuenteFrio from "./routes/exercicio-04";
 function App() {
   return (
     <div className="App">
-      <QuenteFrio />
+      <MiniChat />
     </div>
   );
 }

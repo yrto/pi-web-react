@@ -1,0 +1,9 @@
+.card {
+  border: 1px solid white;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.card.ativo {
+  background-color: blue;
+}

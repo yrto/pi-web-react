@@ -5,6 +5,8 @@ import {
   faSnowflake,
   faArrowUp,
   faArrowDown,
+  faCloud,
+  faCloudShowersHeavy,
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./QuenteFrio.css";
@@ -17,27 +19,41 @@ const QuenteFrio = () => {
       {
         id: "quente",
         data: "26/03",
-        icon: <FontAwesomeIcon icon={faSun} size="6x" />,
+        icon: <FontAwesomeIcon icon={faSun} size="5x" />,
         max: "34°C",
         min: "29°C",
       },
       {
         id: "frio",
         data: "27/03",
-        icon: <FontAwesomeIcon icon={faSnowflake} size="6x" />,
-        max: "12°C",
-        min: "2°C",
+        icon: <FontAwesomeIcon icon={faSnowflake} size="5x" />,
+        max: "5°C",
+        min: "-2°C",
+      },
+      {
+        id: "nublado",
+        data: "28/03",
+        icon: <FontAwesomeIcon icon={faCloud} size="4x" />,
+        max: "20°C",
+        min: "17°C",
+      },
+      {
+        id: "chuvoso",
+        data: "29/03",
+        icon: <FontAwesomeIcon icon={faCloudShowersHeavy} size="5x" />,
+        max: "18°C",
+        min: "10°C",
       },
     ],
   });
 
   const handleStyles = (id) =>
-    tempInfo.destaque === id ? "card destaque" : "card sem-destaque";
+    tempInfo.destaque === id ? `card destaque-${id}` : "card sem-destaque";
 
   const handleClick = (id) => {
     setTempInfo({
       ...tempInfo,
-      destaque: id,
+      destaque: tempInfo.destaque === id ? null : id,
     });
   };
 
@@ -47,9 +63,7 @@ const QuenteFrio = () => {
         <li key={element.id}>
           <div
             className={handleStyles(element.id)}
-            onClick={() => {
-              handleClick(element.id);
-            }}
+            onClick={() => handleClick(element.id)}
           >
             <h2>{element.data}</h2>
             <div className="main-icon">{element.icon}</div>
@@ -64,13 +78,6 @@ const QuenteFrio = () => {
               </div>
             </div>
           </div>
-          <button
-            onClick={() => {
-              handleClick(element.id);
-            }}
-          >
-            Destacar
-          </button>
         </li>
       ))}
     </ul>
