@@ -1,10 +1,16 @@
+import React from "react";
 import "./App.css";
+
 // import NomeComCPF from "./routes/exercicio-02";
 // import CitacaoContainer from "./routes/exercicio-01/CitacaoContainer";
 // import SorteieUmNumero from "./routes/exercicio-03";
 // import QuenteFrio from "./routes/exercicio-04";
 // import CardTempoContainer from "./routes/exercicio-04-alt";
-import MiniChat from "./routes/exercicio-05";
+//import MiniChat from "./routes/exercicio-05";
+// import MiniChat from "./routes/exercicio-05-alt";
+// import TodoListContainer from "./routes/exercicio-06";
+import PrevisaoDoTempoContainer from "./routes/exercicio-07";
+// import Pokedex from "./routes/exercicio-08-pokedex"
 
 /*
  * Componentes:
@@ -19,8 +25,8 @@ import MiniChat from "./routes/exercicio-05";
 
 function App() {
   return (
-    <div className="App">
-      <MiniChat />
+    <div className="app">
+      <PrevisaoDoTempoContainer />
     </div>
   );
 }

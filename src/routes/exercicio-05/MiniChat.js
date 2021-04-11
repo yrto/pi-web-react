@@ -1,4 +1,6 @@
 import { useState } from "react";
+import MensagensWrapper from "./MensagensWrapper";
+import InputWrapper from "./InputWrapper";
 
 const MiniChat = () => {
   //
@@ -18,24 +20,9 @@ const MiniChat = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="msg"
-          value={msg.texto}
-          placeholder="Digite sua mensagem"
-          onChange={handleChange}
-        />
-        <button type="submit">Adicionar mensagem</button>
-      </form>
+      <InputWrapper msg={msg} onChange={handleChange} onSubmit={handleSubmit} />
       <hr />
-      <div>
-        <ul>
-          {mensagens.map((item, index) => (
-            <li key={index}>{item.texto}</li>
-          ))}
-        </ul>
-      </div>
+      <MensagensWrapper mensagens={mensagens} />
     </>
   );
 };
