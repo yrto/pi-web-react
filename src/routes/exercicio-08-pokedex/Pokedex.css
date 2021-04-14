@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+/*
+ * main / resets
+ */
+
+* {
+  font-family: "DM Sans", sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+.app {
+  background: #eeeeee;
+  color: #28272d;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 2rem;
+  cursor: default;
+  line-height: 1.5rem;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/*
+ * main form
+ */
+
+#pokedex-container {
+  min-width: 360px;
+}
+
+#pokedex-container form {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+#pokedex-container form input {
+  flex-grow: 1;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+}
+
+#pokedex-container form button {
+  font-weight: 700;
+}
+
+/*
+ * pokemon cards
+ */
+
+.pokemon-card {
+  display: flex;
+  list-style: none;
+  width: 360px;
+  padding: 1.5rem;
+  background: hsl(0, 0%, 0%, 5%);
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+}
+
+.pokemon-card-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.poke-types {
+  display: flex;
+  margin-top: auto;
+}
+
+.poke-name {
+  margin-top: 0.5rem;
+}
+
+.poke-types li {
+  background: hsl(0, 0%, 0%, 10%);
+  font-size: small;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.pokemon-card-image {
+  background: #eeeeee;
+  height: 132px;
+  width: 132px;
+  padding: 1rem;
+  border-radius: 1rem;
+}

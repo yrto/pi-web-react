@@ -9,8 +9,10 @@ import "./App.css";
 //import MiniChat from "./routes/exercicio-05";
 // import MiniChat from "./routes/exercicio-05-alt";
 // import TodoListContainer from "./routes/exercicio-06";
-import PrevisaoDoTempoContainer from "./routes/exercicio-07";
-// import Pokedex from "./routes/exercicio-08-pokedex"
+// import PrevisaoDoTempoContainer from "./routes/exercicio-07";
+// import Pokedex from "./routes/exercicio-08-pokedex";
+// import Pokedex from "./routes/exercicio-08-pokedex-alt";
+import GiphyMoodContainer from "./routes/exercicio-09-giphy";
 
 /*
  * Componentes:
@@ -26,7 +28,7 @@ import PrevisaoDoTempoContainer from "./routes/exercicio-07";
 function App() {
   return (
     <div className="app">
-      <PrevisaoDoTempoContainer />
+      <GiphyMoodContainer />
     </div>
   );
 }

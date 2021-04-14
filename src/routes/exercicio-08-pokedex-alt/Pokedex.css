@@ -1,0 +1,18 @@
+.pokemon-card {
+  background: #eee;
+  display: flex;
+  padding: 1rem;
+  color: #222;
+  text-align: left;
+  justify-content: space-between;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.pokemon-card img {
+  width: 120px;
+  margin-left: 1rem;
+}
