@@ -8,7 +8,7 @@ import "./App.css";
 // import CardTempoContainer from "./routes/exercicio-04-alt";
 // import MiniChat from "./routes/exercicio-05";
 // import MiniChat from "./routes/exercicio-05-alt";
-// import TodoListContainer from "./routes/exercicio-06";
+import TodoListContainer from "./routes/exercicio-06";
 // import PrevisaoDoTempoContainer from "./routes/exercicio-07";
 // import Pokedex from "./routes/exercicio-08-pokedex";
 // import Pokedex from "./routes/exercicio-08-pokedex-alt";
@@ -29,7 +29,7 @@ import WeatherContainer from "./routes/exercicio-10-weather/WeatherContainer";
 function App() {
   return (
     <div className="app">
-      <WeatherContainer />
+      <TodoListContainer />
     </div>
   );
 }
