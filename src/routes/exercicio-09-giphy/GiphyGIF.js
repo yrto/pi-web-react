@@ -1,15 +1,10 @@
 import React from "react";
-// import React, { useState, useEffect } from "react";
 
-const GiphyGIF = (props) => {
+const GiphyGIF = ({ url, loading }) => {
   //
-  const gifInfo = {
-    url: props.url,
-  };
-
   return (
     <div className="giphy-gif">
-      <img src={gifInfo.url} alt="" />
+      {url ? <img src={url} alt="my mood" /> : <p>Carregando...</p>}
     </div>
   );
 };
