@@ -13,7 +13,7 @@ import TodoListContainer from "./routes/exercicio-06";
 // import Pokedex from "./routes/exercicio-08-pokedex";
 // import Pokedex from "./routes/exercicio-08-pokedex-alt";
 // import GiphyMoodContainer from "./routes/exercicio-09-giphy";
-import WeatherContainer from "./routes/exercicio-10-weather/WeatherContainer";
+// import WeatherContainer from "./routes/exercicio-10-weather/WeatherContainer";
 
 /*
  * Componentes:
