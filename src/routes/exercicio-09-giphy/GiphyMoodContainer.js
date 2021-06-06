@@ -55,9 +55,9 @@ const GiphyMoodContainer = () => {
   return (
     <div>
       <h2 className="rainbow_text_animated">Seu humor hoje</h2>
-      <p>
+      {/* <p>
         {randomNumber + 1}/{limit}
-      </p>
+      </p> */}
       <GiphyGIF url={gifUrl} />
       <GiphyMoodForm
         value={searchText}

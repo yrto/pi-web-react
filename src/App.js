@@ -8,11 +8,11 @@ import "./App.css";
 // import CardTempoContainer from "./routes/exercicio-04-alt";
 // import MiniChat from "./routes/exercicio-05";
 // import MiniChat from "./routes/exercicio-05-alt";
-import TodoListContainer from "./routes/exercicio-06";
+// import TodoListContainer from "./routes/exercicio-06";
 // import PrevisaoDoTempoContainer from "./routes/exercicio-07";
 // import Pokedex from "./routes/exercicio-08-pokedex";
 // import Pokedex from "./routes/exercicio-08-pokedex-alt";
-// import GiphyMoodContainer from "./routes/exercicio-09-giphy";
+import GiphyMoodContainer from "./routes/exercicio-09-giphy";
 // import WeatherContainer from "./routes/exercicio-10-weather/WeatherContainer";
 
 /*
@@ -29,7 +29,10 @@ import TodoListContainer from "./routes/exercicio-06";
 function App() {
   return (
     <div className="app">
-      <TodoListContainer />
+      {/* <TodoListContainer /> */}
+      <GiphyMoodContainer />
+      {/* <Pokedex /> */}
+      {/* <MiniChat />a */}
     </div>
   );
 }
